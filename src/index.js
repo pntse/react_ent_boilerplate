@@ -1,10 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { ReactEnt, StateProvider } from '@react-ent/core';
+import { reactEnt as config } from 'config';
+import { App } from './components/App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactEnt.init(config);
+
+ReactDOM.render(
+  <StateProvider>
+    <App />
+  </StateProvider>,
+  document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
