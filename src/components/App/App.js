@@ -1,4 +1,4 @@
-import React, { memo, useEffect } from 'react';
+import React, { memo } from 'react';
 import { useGet, useStateValue, useSave } from '@rlean/core';
 import Routes from '../../Routes';
 import { DemoModel } from 'lib/models';
@@ -11,16 +11,19 @@ export const App = memo(() => {
 
   console.log('demoModel:', demoModel);
 
-  useEffect(() => {
-    save({ model: DemoModel, value: { id: 1, value: 'test' } });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   useGet({ model: DemoModel });
+
+  const updateDemoModel = () => {
+    save({ model: DemoModel, value: { id: 1, value: 'test' } });
+  };
 
   return (
     <div className='App'>
       <Routes />
+
+      <button type='button' onClick={() => updateDemoModel()}>
+        Update Demo Model
+      </button>
     </div>
   );
 });
