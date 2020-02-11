@@ -1,6 +1,6 @@
-import { Utility } from '@react-ent/core';
+import { Utility } from '@rlean/core';
 
-export class DemoUtility extends Utility {
+class DemoUtility extends Utility {
   get postPath() {
     return '/path';
   }
@@ -9,3 +9,5 @@ export class DemoUtility extends Utility {
     return 'https://uri-to-third-party-api';
   }
 }
+
+export default new DemoUtility();

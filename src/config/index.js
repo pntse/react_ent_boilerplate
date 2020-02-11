@@ -1,3 +1,3 @@
-import { reactEnt } from './reactEnt';
+import { rLean } from './rLean';
 
-export { reactEnt };
+export { rLean };

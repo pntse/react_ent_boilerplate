@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ReactEnt, StateProvider } from '@react-ent/core';
-import { reactEnt as config } from 'config';
+import { RLean, StateProvider } from '@rlean/core';
+import { rLean as config } from 'config';
 import { App } from './components/App';
 import * as serviceWorker from './serviceWorker';
 
-ReactEnt.init(config);
+RLean.init(config);
 
 ReactDOM.render(
   <StateProvider>

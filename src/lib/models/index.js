@@ -1,3 +1,3 @@
-import { DemoModel } from './DemoModel';
+import DemoModel from './DemoModel';
 
 export { DemoModel };

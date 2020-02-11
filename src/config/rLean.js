@@ -1,7 +1,7 @@
 import * as models from 'lib/models';
 import * as utilities from 'lib/utilities';
 
-export const reactEnt = {
+export const rLean = {
   models: models,
   utilities: utilities,
   api: {

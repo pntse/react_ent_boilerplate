@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import 'regenerator-runtime/runtime';
-import { StateProvider } from '@react-ent/core';
+import { StateProvider } from '@rlean/core';
 import { App } from './App';
 
 /**
