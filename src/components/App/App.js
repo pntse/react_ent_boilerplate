@@ -12,7 +12,7 @@ export const App = memo(() => {
   console.log('demoModel:', demoModel);
 
   useEffect(() => {
-    save({ model: DemoModel, value: 'test' });
+    save({ model: DemoModel, value: { id: 1, value: 'test' } });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
