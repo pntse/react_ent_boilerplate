@@ -1,12 +1,12 @@
 import React, { memo } from 'react';
-import { useGet, useStateValue, useSave } from '@rlean/core';
+import { useGet, useGlobalState, useSave } from '@rlean/core';
 import Routes from '../../Routes';
 import { DemoModel } from 'lib/models';
 
 import 'assets/custom-styles.css';
 
 export const App = memo(() => {
-  const [{ demoModel }] = useStateValue();
+  const [{ demoModel }] = useGlobalState();
   const [save] = useSave();
 
   console.log('demoModel:', demoModel);
@@ -18,10 +18,10 @@ export const App = memo(() => {
   };
 
   return (
-    <div className='App'>
+    <div className="App">
       <Routes />
 
-      <button type='button' onClick={() => updateDemoModel()}>
+      <button type="button" onClick={() => updateDemoModel()}>
         Update Demo Model
       </button>
     </div>

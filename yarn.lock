@@ -1129,10 +1129,10 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@rlean/core@^0.39.6":
-  version "0.39.6"
-  resolved "https://registry.yarnpkg.com/@rlean/core/-/core-0.39.6.tgz#d0d187066079e586d8945770cf2ce883dc615775"
-  integrity sha512-zjuytMRb26b1UwCzTEFPF46n+hejrVN9aVzIzTMIaGBHcHZJqxlwRRHFyKdQNpK8922uZdqjKAz+3NmR+lJM9Q==
+"@rlean/core@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@rlean/core/-/core-1.0.5.tgz#0d366261a8abc8b47e3be584fc3d233169985d66"
+  integrity sha512-mnMUjyx8+GH2yyHgNdJPPrr0jQdeLxEpgehaqd6o7pIJPlr1EF96aKh33DmUjPPkLm2Ew2bU3KP4IATP2Ym9BA==
   dependencies:
     "@rlean/utils" "^0.1.0"
     axios "^0.19.0"
