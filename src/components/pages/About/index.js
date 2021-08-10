@@ -1,1 +1,7 @@
-export * from './About';
+import React, { memo } from 'react';
+
+const About = () => {
+  return <h1>About</h1>;
+};
+
+export default memo(About);

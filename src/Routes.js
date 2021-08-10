@@ -1,16 +1,13 @@
 import React from 'react';
-import { Router, navigate } from '@reach/router';
-
-import { Main } from 'components/layout/Main';
-
-import { Home } from 'components/pages/Home';
-import { About } from 'components/pages/About';
+import { Router } from '@reach/router';
+import { Main } from 'components/layout';
+import { About, Home } from 'components/pages';
 
 const Routes = ({ children }) => (
-  <Main navigate={navigate} children={children}>
+  <Main children={children}>
     <Router>
-      <Home path='/' navigate={navigate} />
-      <About path='/about' navigate={navigate} />
+      <Home path="/" />
+      <About path="/about" />
     </Router>
   </Main>
 );

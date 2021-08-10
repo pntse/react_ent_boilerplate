@@ -1,14 +1,14 @@
-import * as models from 'lib/models';
-import * as utilities from 'lib/utilities';
+import * as entities from 'lib/entities';
 
 export const rLean = {
-  models: models,
-  utilities: utilities,
+  entities,
   api: {
     headers: {
-      Authorization: `Bearer token`
+      Authorization: `Bearer token`,
     },
-    uri: process.env.REACT_APP_API_URI
+    uri: process.env.REACT_APP_API_URI,
   },
-  logToConsole: true
+  logToConsole:
+    process.env.REACT_APP_ENV === 'local' ||
+    process.env.REACT_APP_ENV === 'dev',
 };
